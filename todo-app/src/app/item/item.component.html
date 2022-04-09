@@ -1,0 +1,10 @@
+<div class="todo-item" (click) = "onTodoClicked()"  [class.completed]="todo.completed">
+    <div class="todo-text">
+        {{ todo.text }}
+    </div>
+    <div class="remove-item" (click) = "$event.stopPropagation()">
+        <button class="remove" (click) = "onRemoveClick()">
+            Remove
+        </button>
+    </div>
+</div>
